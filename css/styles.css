@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-link {
+    color: #2934d1;
+}
+
+h2 {
+    margin-top: 0.1em;
+    padding: 1em;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+p {
+
+    font-weight: 1rem;
+    font-size: 1rem;
+    padding-left: 1em;
+}
+
+.titulo-seccion {
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----INDEX----- */
+/* QUIENES SOMOS */
+
+.quienes-somos {
+    margin: 2px;
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 1em;
+    height: 95vh;
+    display: flex;
+    background-image: url("../img/indeximg.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: end;
+    align-items: end;
+
+}
+
+
+
+/* ------Footer----- */
+
+.bg-gris {
+    background-color: rgb(248, 249, 250);
+    border-top: 2px solid rgb(226, 224, 224)
+}
+
+
+
+/* staff */
+
+
+
+.grilla-staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 20px;
+    padding: 15px;
+}
+
+.instructor1 {
+    grid-row: span 1;
+    /*esto es para ocupar dos celdas de la grilla*/
+    display: flex;
+    /*aplicamos flexbox para acomodar la info en la caja*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.instructor2 {
+    grid-row: span 1;
+    /*esto es para ocupar dos celdas de la grilla*/
+    display: flex;
+    /*aplicamos flexbox para acomodar la info en la caja*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.instructor3 {
+    grid-row: span 1;
+    /*esto es para ocupar dos celdas de la grilla*/
+    display: flex;
+    /*aplicamos flexbox para acomodar la info en la caja*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+/* Pantalla mobile-tablet */
+@media (min-width: 500px) and (max-width: 1000px) {
+    .grilla-staff {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+}
+
+.grilla-staff img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  Cursos */
+
+
+.grilla-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    gap: 20px;
+    padding: 15px;
+}
+
+.curso1 {
+    grid-row: span 1;
+    /*esto es para ocupar dos celdas de la grilla*/
+    display: flex;
+    /*aplicamos flexbox para acomodar la info en la caja*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.curso2 {
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.curso3 {
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Pantalla mobile-tablet */
+@media (min-width: 500px) and (max-width: 1000px) {
+    .grilla-cursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+}
+
+.grilla-cursos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Experiencias */
+
+.intro {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(26, 12, 12);
+    padding: 15px;
+}
+
+.grilla-experiencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.video {
+    margin-left: 10px;
+}
+
+.exper1 {
+    overflow: hidden;
+}
+
+
+/* Pantalla mobile-tablet */
+@media (min-width: 500px) and (max-width: 1000px) {
+    .grilla-experiencias {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+}
+
+
+/* donde estamos */
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.club {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contacto */
+
+.form1 {
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+    gap: 10px;
+
+}
+
+.form2 {
+    display: flex;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    column-gap: 10px;
+    justify-content: left;
+}
+
+.consulta {
+    text-align: center;
+    padding-left: 10px;
+    display: flex;
+    height: 30px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    background-color: rgba(111, 111, 189, 0.466);
+}
+
+.consulta:hover {
+    background-color: rgb(52, 52, 139);
+    color: aliceblue;
+}
+
+.formulario {
+    display: flex;
+    padding-left: 10px;
+    column-gap: 10px;
+    padding-bottom: 10px;
+}
+
+.botones {
+    padding: 15px;
+    display: flex;
+    padding-left: 100px;
+    text-align: center;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+.enviar {
+    width: 100px;
+    background-color: rgba(111, 111, 189, 0.466)
+}
+
+.enviar:hover {
+    background-color: rgb(52, 52, 139);
+    color: aliceblue;
+}
+
+.borrar {
+    width: 100px;
+    background-color: rgba(106, 204, 106, 0.589);
+    color: black;
+}
+
+.borrar:hover {
+    background-color: red;
+    color: aliceblue;
+}
