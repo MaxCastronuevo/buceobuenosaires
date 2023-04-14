@@ -64,10 +64,62 @@ p {
 
 
 
-/* staff */
+/* staff*/ 
+
+.titulo1{
+display: flex;
+justify-content: center;
+align-items: center;
+   
+}
+
+.flex-container{
+    /* background-color: rgb(21, 163, 163);
+    height: 50%; */
+    
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+       
+ }
+ 
+ .img1{
+     max-height: 100%;
+     max-width: 100%;
+     object-fit: cover;
+     overflow: hidden;
+     margin: 10px;
+     text-align: center;
+   }
+ 
+   .img2{
+     max-height: 100%;
+     max-width: 100%;
+     object-fit: cover;
+     overflow: hidden;
+     margin: 10px;
+     text-align: center;
+ 
+   }
+   .img3{
+     max-height:100%;
+     max-width: 100%;
+     object-fit: cover;
+     overflow: hidden;
+     margin: 10px;
+     text-align: center;
+   }
+ 
+   @media (min-width: 100px) and (max-width: 800px) {
+     .flex-container{
+         display: flex;
+         flex-direction: column;
+         
+ }
+   }
 
 
-
+/*
 .grilla-staff {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -77,10 +129,10 @@ p {
 }
 
 .instructor1 {
+    display: grid;
+    /*aplicamos flexbox para acomodar la info en la caja
     grid-row: span 1;
-    /*esto es para ocupar dos celdas de la grilla*/
-    display: flex;
-    /*aplicamos flexbox para acomodar la info en la caja*/
+    /*esto es para ocupar dos celdas de la grilla
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -89,9 +141,9 @@ p {
 
 .instructor2 {
     grid-row: span 1;
-    /*esto es para ocupar dos celdas de la grilla*/
-    display: flex;
-    /*aplicamos flexbox para acomodar la info en la caja*/
+    /*esto es para ocupar dos celdas de la grilla
+    display: grid;
+    /*aplicamos flexbox para acomodar la info en la caja
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -100,9 +152,9 @@ p {
 
 .instructor3 {
     grid-row: span 1;
-    /*esto es para ocupar dos celdas de la grilla*/
-    display: flex;
-    /*aplicamos flexbox para acomodar la info en la caja*/
+    /*esto es para ocupar dos celdas de la grilla
+    display: grid;
+    /*aplicamos flexbox para acomodar la info en la caja
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -110,12 +162,12 @@ p {
 }
 
 
-/* Pantalla mobile-tablet */
-@media (min-width: 500px) and (max-width: 1000px) {
+/* Pantalla mobile-tablet 
+@media (min-width: 300px) and (max-width: 1000px) {
     .grilla-staff {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        grid-template-columns: 2fr;
+        grid-template-rows: 100px;
     }
 }
 
@@ -124,7 +176,7 @@ p {
     height: 100%;
     object-fit: cover;
 }
-
+*/
 
 /*  Cursos */
 
