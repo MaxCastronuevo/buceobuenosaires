@@ -14,7 +14,7 @@
     font-size: 21px;
 }
 
-h2 {
+h1, h2 {
     margin-top: 0.1rem;
     padding: 1rem;
     font-family: "Barlow", sans-serif;
@@ -59,17 +59,17 @@ p {
     justify-content: center;
     align-items: center;
     object-fit: contain;
-   }
-
-
-   .img{
-    max-width: 400px;
+   
+   &__img{
+    max-width: 100vw;
     max-height: 50%;
     text-align: center;
     object-fit: contain;
     overflow: hidden;
     margin: 10px;
 }
+}
+
 @media (min-width: 100px) and (max-width: 800px) {
     .flex-container{
         display: flex;
@@ -83,6 +83,7 @@ p {
     grid-template-rows: 500px;
     gap: 20px;
     padding: 15px;
+    
 }
 
 /*preguntar porque si pongo solo curso no aplica los cambios*/
@@ -97,6 +98,7 @@ p {
     text-align: center;
     padding: 10px;
     margin: none;
+    background-color: rgb(152, 187, 189);
 }
 
 
@@ -108,6 +110,7 @@ p {
     align-items: center;
     text-align: center;
     padding: 10px;
+    background-color: rgb(152, 187, 189);
 }
 
 .curso3 {
@@ -118,6 +121,7 @@ p {
     align-items: center;
     text-align: center;
     padding: 10px;
+    background-color: rgb(152, 187, 189);
 }
 @media (min-width: 100px) and (max-width: 800px) {
     .grilla-cursos{
@@ -126,37 +130,36 @@ p {
 }
   }
 
-  .intro {
-    display: grid;
-    grid-template-rows: 1fr;
+  /*Esperiencias*/
+
+  .intro{
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
-    color: rgb(26, 12, 12);
-    padding: 15px;
-}
-.grilla-experiencias {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-}
+    
+  }
 
-.video {
-    margin-left: 10px;
-}
-.exper1 {
-    overflow: hidden;
-}
+  .grilla-experiencias {
+    display: flex;
+    justify-content: safe;
+    align-items: safe;
+    padding-left: 50px;
+        max-width: auto; 
+        video {
+          width: 95%; 
+          height: auto; 
+        }
+      }
 
-
-/* Pantalla mobile-tablet */
+  /* Pantalla mobile-tablet */
 @media (min-width: 100px) and (max-width: 1000px) {
     .grilla-experiencias {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        display: flex;
+        flex-direction: column; 
+        overflow: hidden;
     }
 }
+    
 
 /* donde estamos */
 
