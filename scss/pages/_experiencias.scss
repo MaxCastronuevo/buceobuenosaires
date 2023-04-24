@@ -1,0 +1,32 @@
+
+
+  /*Esperiencias*/
+
+  .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .grilla-experiencias {
+    display: flex;
+    justify-content: safe;
+    align-items: safe;
+    padding-left: 50px;
+        max-width: auto; 
+        video {
+          width: 95%; 
+          height: auto; 
+        }
+      }
+
+  /* Pantalla mobile-tablet */
+@media (min-width: 100px) and (max-width: 1000px) {
+    .grilla-experiencias {
+        display: flex;
+        flex-direction: column; 
+        overflow: hidden;
+    }
+}
+    

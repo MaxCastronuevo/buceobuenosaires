@@ -1,0 +1,77 @@
+/* contacto */
+
+.form1 {
+    display: flex;
+    margin: 10px;
+    padding-left: 10px;
+    gap: 10px;
+
+}
+
+.form2 {
+    display: flex;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    column-gap: 10px;
+    justify-content: left;
+}
+
+.consulta {
+    text-align: center;
+    padding-left: 10px;
+    display: flex;
+    height: 30px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(111, 111, 189, 0.466);
+
+
+   &:hover {
+    background-color: rgb(52, 52, 139);
+    color: aliceblue;
+}
+}
+
+.formulario {
+    display: flex;
+    padding-left: 10px;
+    column-gap: 10px;
+    padding-bottom: 10px;
+}
+
+.botones {
+    padding: 15px;
+    display: flex;
+    padding-left: 100px;
+    text-align: center;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+.enviar {
+    width: 100px;
+    background-color:rgba(111, 111, 189, 0.466);
+    border-radius: 10px;
+
+&:hover {
+    background-color:rgb(52, 52, 139);
+    color: aliceblue;
+    border-radius: 10px;
+}
+}
+
+.borrar {
+    width: 120px;
+    background-color: rgba(106, 204, 106, 0.589);
+    color: black;
+    border-radius: 10px;
+
+
+ &:hover {
+    background-color: red;
+    color: aliceblue;
+}
+}

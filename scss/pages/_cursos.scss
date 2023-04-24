@@ -1,0 +1,53 @@
+/*  Cursos */
+.grilla-cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 15px;
+    
+}
+
+
+.curso1{ 
+    grid-row: span 1;
+    /*esto es para ocupar dos celdas de la grilla*/
+    display: flex;
+    /*aplicamos flexbox para acomodar la info en la caja*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: none;
+    background-color: rgb(152, 187, 189);
+}
+
+
+.curso2{
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(152, 187, 189);
+}
+
+.curso3 {
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(152, 187, 189);
+}
+@media (min-width: 100px) and (max-width: 800px) {
+    .grilla-cursos{
+        display: flex;
+        flex-direction: column;
+}
+  }

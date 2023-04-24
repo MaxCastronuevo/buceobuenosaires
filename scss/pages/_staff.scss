@@ -1,0 +1,23 @@
+/* staff*/ 
+.flex-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+   
+   &__img{
+    max-width: 100vw;
+    max-height: 50%;
+    text-align: center;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 10px;
+}
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+}
+  }
