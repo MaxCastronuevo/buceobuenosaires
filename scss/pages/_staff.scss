@@ -11,7 +11,12 @@
     text-align: center;
     overflow: hidden;
     margin: 10px;
-}
+    transition: transform 0.8s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
