@@ -115,7 +115,7 @@ p {
   background-color: rgb(152, 187, 189);
 }
 
-@media screen and (max-width: 978px) {
+@media screen and (max-width: 992px) {
   .grilla-cursos {
     display: flex;
     flex-direction: column;
@@ -223,6 +223,7 @@ p a {
 .formulario {
   display: flex;
   padding-left: 10px;
+  padding-right: 10px;
   column-gap: 10px;
   padding-bottom: 10px;
 }
