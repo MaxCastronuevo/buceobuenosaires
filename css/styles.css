@@ -13,7 +13,6 @@ h1, h2 {
   padding: 1rem;
   font-family: "Barlow", sans-serif;
   display: flex;
-  font-size: 2.5rem;
   justify-content: center;
 }
 
@@ -53,18 +52,17 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
 }
 .flex-container__img {
-  max-width: 100vw;
-  max-height: 50%;
-  text-align: center;
+  width: 100%;
+  height: 50%;
   object-fit: contain;
+  text-align: center;
   overflow: hidden;
   margin: 10px;
 }
 
-@media (min-width: 100px) and (max-width: 800px) {
+@media screen and (max-width: 576px) {
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -73,10 +71,12 @@ p {
 /*  Cursos */
 .grilla-cursos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: 1fr;
-  gap: 20px;
+  grid-auto-rows: auto;
+  gap: 10px;
   padding: 15px;
+  overflow-x: auto;
 }
 
 .curso1 {
@@ -93,6 +93,10 @@ p {
   background-color: rgb(152, 187, 189);
 }
 
+.curso1 img {
+  max-width: 100%;
+}
+
 .curso2 {
   grid-row: span 1;
   display: flex;
@@ -102,6 +106,10 @@ p {
   text-align: center;
   padding: 10px;
   background-color: rgb(152, 187, 189);
+}
+
+.curso2 img {
+  max-width: 100%;
 }
 
 .curso3 {
@@ -115,18 +123,26 @@ p {
   background-color: rgb(152, 187, 189);
 }
 
-@media screen and (max-width: 992px) {
+.curso3 img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 576px) {
   .grilla-cursos {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 }
 /*Esperiencias*/
 .intro1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: justify;
   font-size: larger;
+  flex-wrap: wrap;
+  word-break: break-word;
+  padding: 50px;
 }
 
 .intro2 {
@@ -140,7 +156,10 @@ p {
 .intro3 {
   display: flex;
   justify-content: center;
+  text-align: justify;
   font-size: larger;
+  flex-wrap: wrap;
+  word-break: break-word;
 }
 
 p a {
@@ -152,11 +171,11 @@ p a {
   display: flex;
   justify-content: safe;
   align-items: safe;
-  padding-left: 50px;
+  padding-left: 20px;
   max-width: auto;
 }
 .grilla-experiencias video {
-  width: 95%;
+  width: 96%;
   height: auto;
 }
 

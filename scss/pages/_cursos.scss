@@ -1,12 +1,13 @@
 /*  Cursos */
 .grilla-cursos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0,1fr));
     grid-template-rows: 1fr;
-    gap: 20px;
+    grid-auto-rows: auto;
+    gap: 10px;
     padding: 15px;
-    
-}
+    overflow-x: auto;
+    }
 
 
 .curso1{ 
@@ -23,6 +24,10 @@
     background-color: rgb(152, 187, 189);
 }
 
+.curso1 img{
+    max-width: 100%;
+}
+
 
 .curso2{
     grid-row: span 1;
@@ -35,6 +40,10 @@
     background-color: rgb(152, 187, 189);
 }
 
+.curso2 img{
+    max-width: 100%;
+}
+
 .curso3 {
     grid-row: span 1;
     display: flex;
@@ -45,9 +54,16 @@
     padding: 10px;
     background-color: rgb(152, 187, 189);
 }
-@media screen and (max-width: 992px) {
+
+.curso3 img{
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 576px) {
     .grilla-cursos{
         display: flex;
         flex-direction: column;
-}
+    width:100vw;
+    }
   }

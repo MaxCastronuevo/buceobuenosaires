@@ -3,19 +3,18 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
-   
+      
    &__img{
-    max-width: 100vw;
-    max-height: 50%;
-    text-align: center;
+    width: 100%;
+    height: 50%;
     object-fit: contain;
+    text-align: center;
     overflow: hidden;
     margin: 10px;
 }
 }
 
-@media (min-width: 100px) and (max-width: 800px) {
+@media screen and (max-width: 576px) {
     .flex-container{
         display: flex;
         flex-direction: column;

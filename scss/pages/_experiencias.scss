@@ -5,8 +5,11 @@
 .intro1{
   display: flex;
   justify-content: center;
-align-items: center;
-font-size: larger;  
+  text-align: justify;
+  font-size: larger;
+  flex-wrap:wrap;
+  word-break: break-word;  
+padding: 50px;
 }
 
 .intro2{
@@ -19,7 +22,10 @@ font-size: larger;
 .intro3{
   display: flex;
   justify-content: center;
+  text-align: justify;
   font-size: larger;
+  flex-wrap:wrap;
+  word-break: break-word;
 }
 
 p a {
@@ -32,10 +38,10 @@ p a {
     display: flex;
     justify-content: safe;
     align-items: safe;
-    padding-left: 50px;
+    padding-left: 20px;
         max-width: auto; 
         video {
-          width: 95%; 
+          width: 96%; 
           height: auto; 
         }
       }
