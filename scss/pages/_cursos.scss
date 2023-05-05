@@ -45,7 +45,7 @@
     padding: 10px;
     background-color: rgb(152, 187, 189);
 }
-@media (min-width: 100px) and (max-width: 800px) {
+@media screen and (max-width: 978px) {
     .grilla-cursos{
         display: flex;
         flex-direction: column;

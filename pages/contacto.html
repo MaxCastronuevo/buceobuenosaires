@@ -56,6 +56,7 @@
     <main>
         <h1>Contactanos</h1>
         <!-- Este formulario no es funcional -->
+        <div class="container-flex">
         <form action="">
             <div class="form1">
                 <label for="nombre"> Nombre:</label>
@@ -69,6 +70,10 @@
                 <label for="whatsaap"> Whatsapp:</label>
                 <input id="whatsaap" type="tel">
             </div>
+            <div class="form1">
+                <label for="email"> Email:</label>
+                <input id="email" type="text">
+            </div>
             <div class="form2">
                 <label for="asunto-mensaje">Consultas por:</label>
                 <select class="consulta" name="" id="asunto-mensaje">
@@ -79,12 +84,13 @@
             </div>
             <div class="formulario">
                 <label for="mensaje-usuario"> Mensaje</label>
-                <textarea name="Escribinos tu consulta" id="mensaje-usuario" cols="30" rows="10"></textarea>
+                <textarea name="Escribinos tu consulta" id="mensaje-usuario" cols="100" rows="10"></textarea>
             </div>
             <div class="botones">
                 <input class="enviar" type="submit" value="Enviar">
                 <input class="borrar" type="reset" value="Borrar Datos">
             </div>
+        </div>    
         </form>
     </main>
 

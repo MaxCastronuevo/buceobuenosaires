@@ -2,12 +2,31 @@
 
   /*Esperiencias*/
 
-  .intro{
+.intro1{
+  display: flex;
+  justify-content: center;
+align-items: center;
+font-size: larger;  
+}
+
+.intro2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
+    font-size: x-large;
+    color: hsl(236, 67%, 49%); 
+}
+.intro3{
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+
+p a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 
   .grilla-experiencias {
     display: flex;

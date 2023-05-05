@@ -29,7 +29,7 @@ p {
 }
 
 .nav-link {
-  color: #2934d1;
+  color: hsl(236, 67%, 49%);
   font-size: 21px;
 }
 
@@ -115,17 +115,37 @@ p {
   background-color: rgb(152, 187, 189);
 }
 
-@media (min-width: 100px) and (max-width: 800px) {
+@media screen and (max-width: 978px) {
   .grilla-cursos {
     display: flex;
     flex-direction: column;
   }
 }
 /*Esperiencias*/
-.intro {
+.intro1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: larger;
+}
+
+.intro2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: hsl(236, 67%, 49%);
+}
+
+.intro3 {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+
+p a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .grilla-experiencias {
@@ -162,6 +182,12 @@ p {
 }
 
 /* contacto */
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form1 {
   display: flex;
   margin: 10px;
@@ -201,6 +227,16 @@ p {
   padding-bottom: 10px;
 }
 
+@media screen and (max-width: 976px) {
+  #mensaje-usuario {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #mensaje-usuario {
+    width: 75%;
+  }
+}
 .botones {
   padding: 15px;
   display: flex;

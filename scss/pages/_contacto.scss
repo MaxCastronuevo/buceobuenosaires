@@ -1,5 +1,13 @@
 /* contacto */
 
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 .form1 {
     display: flex;
     margin: 10px;
@@ -41,6 +49,19 @@
     column-gap: 10px;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 976px) {
+    #mensaje-usuario {
+      width: 75%;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    #mensaje-usuario {
+      width: 75%;
+    }
+  }
+
 
 .botones {
     padding: 15px;
