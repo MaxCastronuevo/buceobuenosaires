@@ -14,9 +14,7 @@ $color-curso: rgb(152, 187, 189);
 
 .curso1{ 
     grid-row: span 1;
-    /*esto es para ocupar dos celdas de la grilla*/
     display: flex;
-    /*aplicamos flexbox para acomodar la info en la caja*/
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
