@@ -29,7 +29,7 @@ p {
 
 .nav-link {
   color: hsl(236, 67%, 49%);
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .logo {
@@ -180,6 +180,11 @@ p {
 p a {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
 }
 
 .grilla-experiencias {
