@@ -32,6 +32,10 @@ p {
   font-size: 21px;
 }
 
+.logo {
+  width: 150px;
+}
+
 /* -----INDEX----- */
 /* QUIENES SOMOS */
 .quienes-somos {

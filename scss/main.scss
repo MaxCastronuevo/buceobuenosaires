@@ -4,7 +4,7 @@
  sass --watch ./scss/main.scss ./css/styles.css
  */
 @import "./base";
-@import "./components/nav";
+@import "./components/nav", "./components/footer";
 @import "./pages/index", "./pages/staff", "./pages/cursos", "./pages/experiencias", "./pages/estamosen", "./pages/contacto";
 
 
