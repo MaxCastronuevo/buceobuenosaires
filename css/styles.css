@@ -154,7 +154,7 @@ p {
   display: flex;
   justify-content: center;
   text-align: justify;
-  font-size: larger;
+  font-size: x-large;
   flex-wrap: wrap;
   word-break: break-word;
   padding: 50px;
@@ -164,7 +164,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
+  font-size: xx-large;
   color: hsl(236, 67%, 49%);
 }
 
